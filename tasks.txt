@@ -1,0 +1,8 @@
+eggs
+milk
+sausages
+bacon
+tomatoes
+
+yoghurt
+butter
