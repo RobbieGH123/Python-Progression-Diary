@@ -1,4 +1,4 @@
-Coding journey — Weeks 1–2 (first public update)
+Coding journey — Weeks 1–2 (first public update) This is a demo edit from demo-branch.
 
 This is a public log of my first two weeks learning Python and building small projects. I’m doing 4 hours/day and documenting progress so I can look back, demonstrate consistency, and improve faster.
 
