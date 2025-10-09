@@ -98,9 +98,4 @@ original_list= [1, 2, 3, 4, 5, 6]
 memory_demo(original_number, original_list)
 print(f"After the function Number: {original_number}, List: {my_list}")
 
-
-    
-
-
-
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#

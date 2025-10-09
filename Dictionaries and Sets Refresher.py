@@ -84,18 +84,18 @@ print(Happy_Numbers(2))                             # Test with the input | 2 ->
 # In O(n) time --- Therefore no sorting
 # Return the length of the longest consecutive sequence
 
-def longest_sequence(unsorted_array):
-   max_length = 0
-   set_array = set(unsorted_array)
-   for number in set_array:
-      if number -1 not in set_array:
-         counter = 1
-         while number + 1 in set_array:
-          counter += 1
-          number += 1
-         max_length = max(max_length, counter)
-   return max_length
-print(longest_sequence([100, 4, 200, 1, 3, 2]))
+def longest_sequence(unsorted_array):                   # Creating the function
+   max_length = 0                                       # Empty variable for Sequence Memory
+   set_array = set(unsorted_array)                      # Turns the list into a set
+   for number in set_array:                             # Loop through each number in given set
+      if number -1 not in set_array:                    # If the number, subtracted by 1 is not in the set...
+         counter = 1                                    # Set a counter to equal 1 (As it has to include the first number)
+         while number + 1 in set_array:                 # Continuous loop until the number added 1 is not in the set...
+          counter += 1                                  # Add one to the counter each time
+          number += 1                                   # Add one to the number, priming it for the next loop
+         max_length = max(max_length, counter)          # Else (Once this loop fails), store the highest number max length or counter, in the max length variable
+   return max_length                                    # Once the for loop is completed, returns the max length
+print(longest_sequence([100, 4, 200, 1, 3, 2]))         # Tests for this list, output should be 4 (1, 2, 3, 4)
 
 
 

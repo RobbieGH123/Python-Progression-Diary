@@ -1,10 +1,10 @@
 # Rock Paper Scissors game with dependency injected/deterministic testing.
 def test_rps(user_input, user_score, computer_score, computer_input):
  
- if user_input.lower() == computer_input.lower():
+ if user_input.lower() == computer_input.lower():                                                                                                           # If a draw
         return user_score, computer_score, f" You tied! You have {user_score} points and the Computer has {computer_score} points"
       
- if user_input.lower() == "rock" and computer_input.lower() == "scissors":
+ if user_input.lower() == "rock" and computer_input.lower() == "scissors":                                                                                  # All other bases
         user_score += 1
         return user_score, computer_score, f" Congratulations, you win! You have {user_score} points and the Computer has {computer_score} points"
     
@@ -38,16 +38,14 @@ def rock_paper_scissors_game(user_score=0, computer_score=0, computer_input=None
     user_input = input("Make your choice: Rock, Paper or Scissors: ")                    # Takes the users choice
     print("\n3, \n2, \n1!")                                                              # Countdown 
 
-    user_score, computer_score, message = test_rps(user_input, user_score, computer_score, computer_input)
-    print(message)
+    user_score, computer_score, message = test_rps(user_input, user_score, computer_score, computer_input) # Stores the result as 3 different values
+    print(message)                                                                                         # Prints only the message
 
-    answer = input("Would you like to play again?: ").lower()
-    if answer == "yes" or answer == "yeah":
-     rock_paper_scissors_game(user_score, computer_score, computer_input=None)
+    answer = input("Would you like to play again?: ").lower()                                              # Go again?
+    if answer == "yes" or answer == "yeah":                                                                # If yes
+     rock_paper_scissors_game(user_score, computer_score, computer_input=None)                             # Use the updated scores and go again.
     
-rock_paper_scissors_game()
-
-print(test_rps("rock", 0, 0, "scissors"))
+rock_paper_scissors_game()                                                                                 # First function call
 
 
 

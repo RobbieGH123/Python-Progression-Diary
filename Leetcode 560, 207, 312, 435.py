@@ -54,6 +54,39 @@ print(f"{canfinish(5, [[0,1], [2,0]])}")
         
 
 """
+PROCESSING EXAMPLE: canfinish(4, [[1,0], [2,1], [3,2]])
+
+graph = [[], [], [], []]  # Start with 4 empty lists
+
+# Process prerequisites:
+# [1,0]: graph[1].append(0) → graph = [[], [0], [], []]
+# [2,1]: graph[2].append(1) → graph = [[], [0], [1], []]  
+# [3,2]: graph[3].append(2) → graph = [[], [0], [1], [2]]
+
+states = [0, 0, 0, 0]  # All courses start unvisited
+
+Check Course 0:
+
+- states[0] == 0, so continue
+- states[0] = 1 (mark as exploring)
+- graph[0] = [] (no prerequisites), so skip loop
+- states[0] = 2 (mark as done)
+- return False
+states now: [2, 0, 0, 0]
+
+Check Course 1:
+
+- states[1] == 0, so continue
+- states[1] = 1 (mark as exploring)  
+- graph[1] = [0], so check prereq 0
+  - hasCycle(0, graph, states):
+    - states[0] == 2 (already done), return False
+- states[1] = 2 (mark as done)
+- return False
+states now: [2, 2, 0, 0]
+
+Check Course 2:
+
 - states[2] == 0, so continue
 - states[2] = 1 (mark as exploring)
 - graph[2] = [1], so check prereq 1  
@@ -62,4 +95,29 @@ print(f"{canfinish(5, [[0,1], [2,0]])}")
 - states[2] = 2 (mark as done)
 - return False
 states now: [2, 2, 2, 0]
+
+Check Course 3: Similar process, returns False
+Final Result: All courses return False (no cycles), so canfinish returns True!
 """
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+## Leetcode 435 Non Overlapping Intervals ##
+
+def noverlap(intervals):                        # Function Creation
+
+ counter = 0                                    # Removed interval counter
+ intervals.sort(key=lambda x: x[1])  # Sort in place.
+ i = 0
+ while i < len(intervals) - 1:
+    if intervals[i][1] > intervals[i+1][0]:
+         del intervals[i + 1]
+         counter += 1
+    else: 
+        i += 1
+ print(counter)
+ return counter
+noverlap([[1,2],[2,3]])
+
+
+
+

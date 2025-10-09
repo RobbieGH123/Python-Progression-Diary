@@ -84,6 +84,7 @@ def rotated_array_search(rotar, target):    # 2 Parameter function
         else:
             if target <= rotar[right] and target > rotar[mid]:
                 left = mid + 1
+            else: right = mid - 1
     return -1
 
 arr = [4,5,6,7,0,1,2]

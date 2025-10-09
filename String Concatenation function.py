@@ -1,8 +1,12 @@
-def concat(a, b):
-    return a + " " + b
+# def concat(a, b):
+  #  return a + " " + b
 
-name1 = input("What is your first name: ")
-name2 = input("What is your last name: ")
-result = concat(name1, name2)
-print(f"\n Hello {result}")
+#print(f"\n Hello {concat("Robbie","Ladd")}")
+
+class Greeter:
+    def greet(self, name):
+        return f"Hello, {name}!"
     
+a = Greeter()
+print(a.greet("Robbie"))  # Method call
+print(a.name)

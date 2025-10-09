@@ -1,5 +1,14 @@
 # Workspace for testing code:
 
+stack = [1, 3, 5, 6, 5, 3, 6, 9]
+stack.pop()
+print(stack)
+print(f"stack: {stack.pop()}")
+
+
+
+
+
 print("--- Testing raise ---")
 
 def withdraw(amount):
