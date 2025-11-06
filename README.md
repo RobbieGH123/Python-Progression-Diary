@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+Coding journey — Weeks 1–2 (first public update) This is a demo edit from demo-branch.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a public log of my first two weeks learning Python and building small projects. I’m doing 4 hours/day and documenting progress so I can look back, demonstrate consistency, and improve faster.
 
-## Available Scripts
+What I have coded so far:
 
-In the project directory, you can run:
+Currency converter — with input validation and error handling.
 
-### `npm start`
+Mini calculator — basic arithmetic functions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+FizzBuzz — classic control-flow exercise.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Random number generator / guesser — simple interactive program.
 
-### `npm test`
+To-Do list — CLI app with save / load / add / delete functionality. (Although I'm not great with file handing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Rock-Paper-Scissors game — simple CLI game demonstrating functions, input handling, and randomisation.
 
-### `npm run build`
+ ![Rock-Paper-Scissors Demo](./assets/Rock-paper-scissors DEMO.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These are the key skills I have learned so far:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Data types: strings, integers, floats.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Collections: lists, dictionaries, sets.
 
-### `npm run eject`
+Flow control: for, while, if / elif / else.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Functions and basic modularisation.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Indexing / slicing (splicing).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+range() and loops.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Importing modules.
 
-## Learn More
+Basic file I/O (for the To-Do save/load).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Starting to use try / except for error handling (dabbled).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Whilst I have learned these concepts, I obviously haven't mastered them yet... 2 weeks in.
 
-### Code Splitting
+My Current Pitfalls:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I’m still unclear about when and why to use GitHub beyond uploading code, so here I am, testing the waters. 
 
-### Analyzing the Bundle Size
+My plan for Weeks 3 & 4:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Deepen Python idioms (list comprehensions, lambda/map/filter and cleaner function-based code).
 
-### Making a Progressive Web App
+Continue to dripfeed LeetCode practice (medium → hard) to build pattern recognition and time/space intuition.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Complete CS fundamentals (CS50x/Odin modules on arrays, memory and functions).
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Create new and polish existing projects (Rock paper scissors project + To-Do), improve READMEs/screenshots, and learn more about Git.
